@@ -1,4 +1,7 @@
-import 'package:dartwidgetspractise/ui/text_field.dart';
+import 'package:dartwidgetspractise/screen_design/screen_one.dart';
+import 'package:dartwidgetspractise/ui/bottom_sheet.dart';
+import 'package:dartwidgetspractise/ui/expansion_tile.dart';
+import 'package:dartwidgetspractise/ui/stylish_bottom_navbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
@@ -39,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(const Duration(seconds: 1), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const  TextFieldClass()),
+        MaterialPageRoute(builder: (context) => const  ScreenOne()),
       );
     });
   }

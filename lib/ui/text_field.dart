@@ -14,6 +14,10 @@ class _TextFieldClassState extends State<TextFieldClass> {
 
   final nameController = TextEditingController();
   final passwordController = TextEditingController();
+
+  bool obscureText = true;
+
+
   @override
   Widget build(BuildContext context) {
 
@@ -46,10 +50,14 @@ class _TextFieldClassState extends State<TextFieldClass> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 5),
             child: CustomTextField(
+              obscureText: obscureText,
               controller: passwordController,
               hintText: 'Password',
               prefixIcon: Icons.lock_open_sharp,
               keyboardType: TextInputType.text,
+
+
+
             ),
 
           ),
