@@ -79,7 +79,6 @@ class _ConstraintBoxScreenState extends State<ConstraintBoxScreen> {
             ),
           ],
         ),
-
       ),
     );
   }

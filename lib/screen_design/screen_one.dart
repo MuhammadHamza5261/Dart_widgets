@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class ScreenOne extends StatefulWidget {
   const ScreenOne({super.key});
 
@@ -39,7 +40,7 @@ class _ScreenOneState extends State<ScreenOne> {
               const SizedBox(
                 height: 15,
               ),
-              Row(
+             const Row(
                 children: [
                   Icon(Icons.real_estate_agent_outlined,color: Colors.deepOrange,size: 30,),
                  SizedBox(
@@ -80,7 +81,8 @@ class _ScreenOneState extends State<ScreenOne> {
                       SizedBox(
                         width: 10,
                       ),
-                      Text('124',style: TextStyle(
+                      Text('124',
+                        style: TextStyle(
                         fontSize: 20,
                         color: Colors.blue,
                       ),)

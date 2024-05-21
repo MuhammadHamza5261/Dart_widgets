@@ -16,6 +16,7 @@ class _MyPickerState extends State<MyPicker> {
   Widget build(BuildContext context) {
 
     //add media query of this screen
+
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
 
