@@ -16,16 +16,18 @@ class _SliverAppBarScreenState extends State<SliverAppBarScreen> {
       body: CustomScrollView(
         slivers: [
           const SliverAppBar(
+            centerTitle: true,
             backgroundColor: Colors.black54,
-            expandedHeight: 250.0,
+            expandedHeight: 200.0,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text('Bonjour',textScaleFactor: 2,),
+              title: Text('Bonjour',
+                textScaleFactor: 2,),
               centerTitle: true,
             ),
           ),
           SliverList(
               delegate: SliverChildBuilderDelegate(
-                  (_,int index ){
+                  (_,int index, ){
                     return const ListTile(
                       leading: Text('1'),
                       title: Text('Flutter'),

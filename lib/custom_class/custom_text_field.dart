@@ -106,7 +106,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                },
              ):
              null,
-              labelStyle: Theme.of(context).textTheme.bodyText2!.copyWith(
+              labelStyle: Theme.of(context).textTheme.bodySmall!.copyWith(
             fontWeight: FontWeight.w600,
             color: Colors.black38,
             letterSpacing: 1.0,

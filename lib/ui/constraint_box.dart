@@ -27,12 +27,9 @@ class _ConstraintBoxScreenState extends State<ConstraintBoxScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Align(
-              alignment: Alignment.center,
+
               child: ConstrainedBox(
-                constraints:  BoxConstraints.expand(
-                    height: height*0.3,
-                    width: width*0.8,
-                ),
+                constraints: const  BoxConstraints(),
                 child: Container(
                   color: Colors.blue.shade100,
                   child: const Column(

@@ -25,7 +25,7 @@ class _QrCodeScreenState extends State<QrCodeScreen> {
         padding: const EdgeInsets.all(20),
         child: Center(
           child: QrImageView(
-            data: '1234567890',
+            data: '96880492-940240',
             version: QrVersions.auto,
             size: 200.0,
           ),

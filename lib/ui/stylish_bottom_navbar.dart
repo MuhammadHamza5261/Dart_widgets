@@ -9,6 +9,7 @@ class AnimatedBarExample extends StatefulWidget {
   State<AnimatedBarExample> createState() => _AnimatedBarExampleState();
 }
 
+
 class _AnimatedBarExampleState extends State<AnimatedBarExample> {
 
   int selected = 0;
@@ -26,18 +27,8 @@ class _AnimatedBarExampleState extends State<AnimatedBarExample> {
     return Scaffold(
       extendBody: true, //to make floating action button notch transparent
 
-      //to avoid the floating action button overlapping behavior,
-      // when a soft keyboard is displayed
-      // resizeToAvoidBottomInset: false,
 
       bottomNavigationBar: StylishBottomBar(
-        // option: AnimatedBarOptions(
-        //   // iconSize: 32,
-        //   barAnimation: BarAnimation.blink,
-        //   iconStyle: IconStyle.animated,
-
-        //   // opacity: 0.3,
-        // ),
         option: DotBarOptions(
           dotStyle: DotStyle.tile,
           gradient: const LinearGradient(

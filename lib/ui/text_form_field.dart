@@ -34,10 +34,10 @@ class _TextFormScreenState extends State<TextFormScreen> {
 
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
-                  borderSide: BorderSide(color: Colors.grey),
+                  borderSide: const BorderSide(color: Colors.grey),
                 ),
                 focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.red),
+                  borderSide: const BorderSide(color: Colors.red),
                   borderRadius: BorderRadius.circular(20)
                 ),
 

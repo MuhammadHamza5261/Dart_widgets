@@ -31,14 +31,17 @@ class _WrapScreenState extends State<WrapScreen> {
             Chip(
               avatar: CircleAvatar(
                   backgroundColor: Colors.blue.shade200,
-                  child: const Text('F'),
+                  child: const Center(
+                    child: Text('F'),
+                  ),
               ),
               label: const Text('Flutter'),
             ),
             Chip(
               avatar: CircleAvatar(
                   backgroundColor: Colors.blue.shade200,
-                  child: const Text('R')),
+                  child: const Text('R'),
+              ),
               label: const Text('React Native'),
             ),
             Chip(

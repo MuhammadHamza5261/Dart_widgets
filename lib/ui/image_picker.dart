@@ -48,7 +48,7 @@ class _MyPickerState extends State<MyPicker> {
                         padding: const EdgeInsets.all(8.0),
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.orange.shade200,
+                            backgroundColor: Colors.orange.shade200,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5),
                             ),
@@ -68,7 +68,7 @@ class _MyPickerState extends State<MyPicker> {
                         padding: const EdgeInsets.all(8.0),
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.green.shade300,
+                            backgroundColor: Colors.green.shade300,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5),
                             ),

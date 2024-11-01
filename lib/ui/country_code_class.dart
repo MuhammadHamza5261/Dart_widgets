@@ -11,10 +11,10 @@ class CountryCodeClass extends StatefulWidget {
 
 class _CountryCodeClassState extends State<CountryCodeClass> {
 
-  String _selectedCountryCode = 'IT';
+  String _selectedCountryCode = 'PK';
 
   // Default country code
-  TextEditingController _mobileNumberController = TextEditingController();
+  final TextEditingController _mobileNumberController = TextEditingController();
 
 
   @override
@@ -44,18 +44,17 @@ class _CountryCodeClassState extends State<CountryCodeClass> {
       showOnlyCountryWhenClosed: false,
       alignLeft: false,
     ),
-       SizedBox(width: 10),
+       const SizedBox(width: 10),
         Expanded(
        child: TextFormField(
         controller: _mobileNumberController,
-        keyboardType: TextInputType.phone,
-         decoration: InputDecoration(
+        keyboardType: TextInputType.number,
+         decoration: const InputDecoration(
         labelText: 'Mobile Number',
-        hintText: 'Enter your mobile number',
-         prefixText: '${_selectedCountryCode}',
+        hintText: 'Mobile number',
+         // prefixText: '${_selectedCountryCode}',
          ),
         onChanged: (value) {
-    // You can access the entered mobile number via value
     },
     ),
     ),

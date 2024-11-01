@@ -25,7 +25,7 @@ class _ShowDialogScreenState extends State<ShowDialogScreen> {
           height: height*0.065,
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-              primary: Colors.pink.shade100,
+              backgroundColor: Colors.pink.shade100,
             ),
               onPressed: (){
               showDialog(
