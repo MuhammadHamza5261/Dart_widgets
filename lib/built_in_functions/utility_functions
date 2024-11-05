@@ -1,0 +1,19 @@
+
+// Null aware Operations
+
+  String? name;
+  String? displayName = name ?? "Guest",
+
+
+// Conditional Expression
+
+   int age = 20;
+   String  ageGroup = age > 18 ? 'Adult' : 'Minor';
+
+
+// Spread Operator
+
+// this operator is used to get all list used in ...
+
+ List<int> list1 = [1,2,3,4,5];
+ List<int> list2 = [0, ...list1, 4];

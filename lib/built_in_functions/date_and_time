@@ -1,0 +1,27 @@
+
+// Current date and time
+
+DateTime now = DateTime.now();
+
+
+// Specific date and time
+
+
+  DateTime specificDate = DateTime(2024,11,4)
+
+
+  // Parsing Date and String
+
+   DateTime  parsedDate = DateTime.parse('2024-11-04');
+
+
+   // From UTC
+
+   DateTime utcDate = DateTime.utc(2024,11,4);
+
+
+
+   2) Formatting Date and Time
+
+   String formattedDate = DateFormat('yyyy-MM-dd').format(now);
+   String formattedTime = DateFormat('HH:mm:ss').format(now);
