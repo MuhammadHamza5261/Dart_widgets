@@ -1,20 +1,15 @@
-import 'package:dartwidgetspractise/ui/animated_container.dart';
-import 'package:dartwidgetspractise/ui/country_code_class.dart';
-import 'package:dartwidgetspractise/ui/custom_scroll_view.dart';
-import 'package:dartwidgetspractise/ui/expansion_tile.dart';
+import 'package:dartwidgetspractise/screen_design/screen_one.dart';
+import 'package:dartwidgetspractise/ui/compressed_image.dart';
 import 'package:dartwidgetspractise/ui/f.dart';
-import 'package:dartwidgetspractise/ui/flutter_barcode_reader.dart';
-import 'package:dartwidgetspractise/ui/flutter_qr.dart';
-import 'package:dartwidgetspractise/ui/future_builder.dart';
-import 'package:dartwidgetspractise/ui/future_builder_list.dart';
-import 'package:dartwidgetspractise/ui/image_loading_builder.dart';
-import 'package:dartwidgetspractise/ui/reorder_list_view.dart';
-import 'package:dartwidgetspractise/ui/sliver_app_bar.dart';
+import 'package:dartwidgetspractise/ui/full_screen_image.dart';
+import 'package:dartwidgetspractise/ui/gradient_color.dart';
+import 'package:dartwidgetspractise/ui/hero_widget.dart';
+import 'package:dartwidgetspractise/ui/listneble_two.dart';
+import 'package:dartwidgetspractise/ui/stack.dart';
 import 'package:dartwidgetspractise/ui/stylish_bottom_navbar.dart';
+import 'package:dartwidgetspractise/ui/height_with_padding.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-
 
 void main() {
 
@@ -28,7 +23,7 @@ class MyApp extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'My App',
-      home: FutureBuilderList(),
+      home: StackPrac(),
     );
   }
 }

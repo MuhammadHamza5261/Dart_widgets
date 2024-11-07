@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
 
-
 class TweenAnimationExample extends StatefulWidget {
+  const TweenAnimationExample({super.key});
+
   @override
   _TweenAnimationExampleState createState() => _TweenAnimationExampleState();
 }
 
 class _TweenAnimationExampleState extends State<TweenAnimationExample> {
+
   bool _isLarge = false;
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tween Animation Example'),
+        title: const Text('Tween Animation Example'),
       ),
       body: Center(
         child: GestureDetector(
@@ -24,7 +27,7 @@ class _TweenAnimationExampleState extends State<TweenAnimationExample> {
           },
           child: TweenAnimationBuilder(
             tween: Tween<double>(begin: 100.0, end: _isLarge ? 200.0 : 100.0),
-            duration: Duration(seconds: 1),
+            duration: const Duration(seconds: 1),
             builder: (context, double size, child) {
               return Container(
                 width: size,

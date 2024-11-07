@@ -15,6 +15,7 @@ class _ScreenOneState extends State<ScreenOne> {
     // media query
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
+    var size = MediaQuery.of(context).size;
 
     return Scaffold(
       backgroundColor: Colors.grey.shade200.withOpacity(0.9),

@@ -6,8 +6,9 @@ class StudentModel{
   int? id;
   String? name;
   String? className;
+  String? fatherName;
 
-  StudentModel({required this.id, required this.name, required this.className});
+  StudentModel({required this.id, required this.name, required this.className,this.fatherName});
 
 }
 
@@ -28,6 +29,7 @@ class _FutureBuilderListState extends State<FutureBuilderList> {
         id: 1,
         name: "Muhammad Hamza",
         className: "Flutter Mobile Appp Development",
+        fatherName: "",
       ),
       StudentModel(
         id: 2,
@@ -60,8 +62,7 @@ class _FutureBuilderListState extends State<FutureBuilderList> {
 
   @override
   Widget build(BuildContext context) {
-    var height = MediaQuery.of(context).size.width;
-    var width = MediaQuery.of(context).size.height;
+   var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
