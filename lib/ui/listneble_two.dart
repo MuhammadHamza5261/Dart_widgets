@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CartItem {
+
   final String name;
   final double price;
 
@@ -18,6 +19,9 @@ class CartModel {
   void removeItem(CartItem item) {
     items.value = List.from(items.value)..remove(item);
   }
+
+
+
 }
 
 class ListenableTwo extends StatefulWidget {

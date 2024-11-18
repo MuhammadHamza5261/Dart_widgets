@@ -23,7 +23,7 @@ class _StackScreenState extends State<StackScreen> {
             Container(
               decoration: BoxDecoration(
                   color: Colors.grey.shade300,
-                borderRadius: BorderRadius.circular(20)
+                borderRadius: BorderRadius.circular(20),
               ),
               height: size.height*0.5,
             ),
@@ -33,7 +33,7 @@ class _StackScreenState extends State<StackScreen> {
           //       right: -5,
           //       child: Icon(Icons.cancel,color: Colors.red,)
           // ),
-      Positioned(
+        Positioned(
         top: 0,
         right: 0,
         child: Transform.translate(
