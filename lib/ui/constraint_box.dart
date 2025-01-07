@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
+
 class ConstraintBoxScreen extends StatefulWidget {
   const ConstraintBoxScreen({super.key});
 
   @override
   State<ConstraintBoxScreen> createState() => _ConstraintBoxScreenState();
 }
+
 
 class _ConstraintBoxScreenState extends State<ConstraintBoxScreen> {
   @override
@@ -27,7 +29,6 @@ class _ConstraintBoxScreenState extends State<ConstraintBoxScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Align(
-
               child: ConstrainedBox(
                 constraints: const  BoxConstraints(),
                 child: Container(

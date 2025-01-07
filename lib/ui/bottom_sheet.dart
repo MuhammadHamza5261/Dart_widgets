@@ -38,7 +38,7 @@ class _BottomSheetScreenState extends State<BottomSheetScreen> {
                                 topRight: Radius.circular(30),
                             ),
                           ),
-                          height: 300,
+                          // height: 500,
                           child: const Center(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,

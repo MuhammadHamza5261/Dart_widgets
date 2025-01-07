@@ -39,14 +39,14 @@ class _MyHomePageState extends State<MyHomePage> {
       counter: counter,
       child: Scaffold(
         appBar: AppBar(
-          title: Text("InheritedWidget Example"),
+          title: const Text("InheritedWidget Example"),
         ),
         body: Column(
           children: [
             CounterDisplay(),
             ElevatedButton(
               onPressed: _incrementCounter,
-              child: Text("Increment Counter"),
+              child: const Text("Increment Counter"),
             ),
           ],
         ),
@@ -62,7 +62,7 @@ class CounterDisplay extends StatelessWidget {
     final inheritedWidget = MyInheritedWidget.of(context);
     return Text(
       "Counter: ${inheritedWidget?.counter}",
-      style: TextStyle(fontSize: 24),
+      style: const TextStyle(fontSize: 24),
     );
   }
 }

@@ -33,12 +33,15 @@ class _StackScreenState extends State<StackScreen> {
           //       right: -5,
           //       child: Icon(Icons.cancel,color: Colors.red,)
           // ),
-        Positioned(
-        top: 0,
-        right: 0,
-        child: Transform.translate(
-            offset: const Offset(5, -10),
-            child: const Icon(Icons.cancel,color: Colors.red,),
+              Positioned(
+               top: 0,
+                 right: 0,
+                child: Transform.translate(
+                  // container ka hisab sa offset adjust kar skta han ka icon kis jaga pa show ho ga
+                  offset: const Offset(5, -10),
+                  child: const Icon(
+                    Icons.cancel,color: Colors.red,
+                  ),
         ),
       ),
           ],
